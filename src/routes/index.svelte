@@ -63,15 +63,15 @@
 							</div>
 						</div>
 						<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Work</a>
 
-							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Team</a>
 
-							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Community</a>
 
-							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+							<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
 
-							<a href="#" class="font-medium text-teal-600 hover:text-teal-500">Log in</a>
+							<a href="#" class="font-medium text-teal-600 hover:text-teal-500">Donate</a>
 						</div>
 					</nav>
 				</div>
@@ -166,8 +166,8 @@
 			>
 				<div class="sm:text-center lg:text-left">
 					<h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-						<span class="block xl:inline">Data to enrich your</span>
-						<span class="block text-teal-600 xl:inline">online business</span>
+						<span class="block xl:inline">Building a better</span>
+						<span class="block text-teal-600 xl:inline">Sudan, together</span>
 					</h1>
 					<p
 						class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
@@ -181,7 +181,7 @@
 								href="#"
 								class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
 							>
-								Get started
+								Get involved
 							</a>
 						</div>
 						<div class="mt-3 sm:mt-0 sm:ml-3">
@@ -189,7 +189,7 @@
 								href="#"
 								class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-teal-100 hover:bg-teal-200 md:py-4 md:text-lg md:px-10"
 							>
-								Live demo
+								Learn more
 							</a>
 						</div>
 					</div>
@@ -207,208 +207,8 @@
 </div>
 
 
-
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-      <span class="block">Ready to dive in?</span>
-      <span class="block text-teal-600">Start your free trial today.</span>
-    </h2>
-    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-      <div class="inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700">
-          Get started
-        </a>
-      </div>
-      <div class="ml-3 inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50">
-          Learn more
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-gray-900">
-  <div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
-    <div class="h-full w-full xl:grid xl:grid-cols-2">
-      <div class="h-full xl:relative xl:col-start-2">
-        <img class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0" src="/yusuf-yassir--_AxNYIJRYE-unsplash.jpeg" alt="People working on laptops">
-        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"></div>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-    <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-      <h2 class="text-sm font-semibold text-teal-300 tracking-wide uppercase">
-        Valuable Metrics
-      </h2>
-      <p class="mt-3 text-3xl font-extrabold text-white">Get actionable data that will help grow your business</p>
-      <p class="mt-5 text-lg text-gray-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
-      <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-        <p>
-          <span class="block text-2xl font-bold text-white">8K+</span>
-          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Companies</span> use laoreet amet lacus nibh integer quis.</span>
-        </p>
-
-        <p>
-          <span class="block text-2xl font-bold text-white">25K+</span>
-          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Countries around the globe</span> lacus nibh integer quis.</span>
-        </p>
-
-        <p>
-          <span class="block text-2xl font-bold text-white">98%</span>
-          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Customer satisfaction</span> laoreet amet lacus nibh integer quis.</span>
-        </p>
-
-        <p>
-          <span class="block text-2xl font-bold text-white">12M+</span>
-          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Issues resolved</span> lacus nibh integer quis.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white py-16 sm:py-24 lg:py-32">
-  <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-    <h2 class="text-base font-semibold tracking-wider text-teal-600 uppercase">Deploy faster</h2>
-    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-      Everything you need to deploy your app
-    </p>
-    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-      Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-    </p>
-    <div class="mt-12">
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/cloud-upload -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Push to Deploy</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/lock-closed -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">SSL Certificates</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/refresh -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Simple Queues</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/shield-check -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Advanced Security</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/cog -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Powerful API</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-            <div class="-mt-6">
-              <div>
-                <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                  <!-- Heroicon name: outline/server -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Database Backups</h3>
-              <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+<div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-28 lg:px-8">
   <div class="absolute inset-0">
     <div class="bg-white h-1/3 sm:h-2/3"></div>
   </div>
@@ -567,6 +367,73 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-gray-900">
+  <div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
+    <div class="h-full w-full xl:grid xl:grid-cols-2">
+      <div class="h-full xl:relative xl:col-start-2">
+        <img class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0" src="/yusuf-yassir--_AxNYIJRYE-unsplash.jpeg" alt="People working on laptops">
+        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"></div>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+    <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+      <h2 class="text-sm font-semibold text-teal-300 tracking-wide uppercase">
+        Valuable Metrics
+      </h2>
+      <p class="mt-3 text-3xl font-extrabold text-white">Get actionable data that will help grow your business</p>
+      <p class="mt-5 text-lg text-gray-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
+      <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+        <p>
+          <span class="block text-2xl font-bold text-white">8K+</span>
+          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Companies</span> use laoreet amet lacus nibh integer quis.</span>
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">25K+</span>
+          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Countries around the globe</span> lacus nibh integer quis.</span>
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">98%</span>
+          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Customer satisfaction</span> laoreet amet lacus nibh integer quis.</span>
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">12M+</span>
+          <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Issues resolved</span> lacus nibh integer quis.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <span class="block">Ready to build back better?</span>
+      <span class="block text-teal-600">Join us today!</span>
+    </h2>
+    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+      <div class="inline-flex rounded-md shadow">
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700">
+          Get involved
+        </a>
+      </div>
+      <div class="ml-3 inline-flex rounded-md shadow">
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50">
+          Learn more
+        </a>
       </div>
     </div>
   </div>
