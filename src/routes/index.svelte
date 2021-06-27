@@ -1,3 +1,7 @@
+<script>
+  let mobileMenuOpen = false;
+</script>
+
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
@@ -32,6 +36,7 @@
 								</a>
 								<div class="-mr-2 flex items-center md:hidden">
 									<button
+                    on:click={() => { mobileMenuOpen = true; }}
 										type="button"
 										class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
 										aria-expanded="false"
@@ -81,7 +86,8 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-				<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+				{#if mobileMenuOpen}
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
 					<div
 						class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
 					>
@@ -89,12 +95,13 @@
 							<div>
 								<img
 									class="h-8 w-auto"
-									src="https://tailwindui.com/img/logos/workflow-mark-teal-600.svg"
+									src="/workflow-mark.svg"
 									alt=""
 								/>
 							</div>
 							<div class="-mr-2">
 								<button
+                  on:click={() => { mobileMenuOpen = false; }}
 									type="button"
 									class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
 								>
@@ -151,6 +158,7 @@
 						</a>
 					</div>
 				</div>
+        {/if}
 			</div>
 
 			<main
