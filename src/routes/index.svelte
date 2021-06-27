@@ -27,7 +27,7 @@
 						<div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
 							<div class="flex items-center justify-between w-full md:w-auto">
 								<a href="#">
-									<span class="sr-only">Workflow</span>
+									<span class="sr-only">UNYS</span>
 									<img
                     alt=""
 										class="h-8 w-auto sm:h-10"
@@ -129,32 +129,32 @@
 							<a
 								href="#"
 								class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-								>Product</a
+								>Work</a
 							>
 
 							<a
 								href="#"
 								class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-								>Features</a
+								>Team</a
 							>
 
 							<a
 								href="#"
 								class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-								>Marketplace</a
+								>Community</a
 							>
 
 							<a
 								href="#"
 								class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-								>Company</a
+								>Contact</a
 							>
 						</div>
 						<a
 							href="#"
 							class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
 						>
-							Log in
+							Donate
 						</a>
 					</div>
 				</div>
@@ -735,7 +735,7 @@
         </a>
       </div>
       <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-        &copy; 2020 Workflow, Inc. All rights reserved.
+        &copy; 2021 UNYS, Inc. All rights reserved.
       </p>
     </div>
   </div>
