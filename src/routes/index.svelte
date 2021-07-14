@@ -1,14 +1,43 @@
 <script context="module">
-  export const prerender = true;
+	export const prerender = true;
 </script>
 
 <script>
+	import { onMount } from 'svelte';
+
 	let mobileMenuOpen = false;
+	let subscribedToNewsletter = false;
 
 	const navLinks = [
 		// { text: 'Contact', href: '/contact' },
 		// { text: 'Dontate', href: '', primary: true },
 	];
+
+	onMount(() => {
+		const subscribedToNewsletterAt = Number(localStorage.getItem('subscribedToNewsletterAt'));
+    if(!Number.isNaN(subscribedToNewsletterAt) && Date.now() - subscribedToNewsletterAt < 120000) {
+      subscribedToNewsletter = true;
+    }
+
+		const form = document.getElementById('newsletter');
+		if (form) {
+			form.addEventListener('submit', e => {
+				e.preventDefault();
+				const formData = new FormData(form);
+				fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: new URLSearchParams(formData).toString(),
+				})
+					.then(() => {
+						console.log('newsletter subscription successful');
+						subscribedToNewsletter = true;
+            localStorage.setItem('subscribedToNewsletterAt', Date.now());
+					})
+					.catch(err => console.error(err));
+			});
+		}
+	});
 </script>
 
 <svelte:head>
@@ -16,79 +45,84 @@
 </svelte:head>
 
 <div class="flex flex-col min-h-screen">
-  <div class="relative bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-      <div
-        class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
-      >
-        <svg
-          class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
+	<div class="relative bg-white overflow-hidden">
+		<div class="max-w-7xl mx-auto">
+			<div
+				class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+			>
+				<svg
+					class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+					fill="currentColor"
+					viewBox="0 0 100 100"
+					preserveAspectRatio="none"
+					aria-hidden="true"
+				>
+					<polygon points="50,0 100,0 50,100 0,100" />
+				</svg>
 
-        <div>
-          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-            <nav
-              class="relative flex items-center justify-between sm:h-10 lg:justify-start"
-              aria-label="Global"
-            >
-              <div
-                class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
-              >
-                <div class="flex items-center justify-between w-full md:w-auto">
-                  <a class="font-bold tracking-tighter" href="/">
-                    <h1 class="text-2xl md:text-3xl md:mt-2">YAS</h1>
-                    <p class="text-gray-600 -mt-2 md:text-lg">Youth in Action - Sudan</p>
-                  </a>
-                  <div class:hidden={!navLinks.length} class="-mr-2 flex items-center md:hidden">
-                    <button
-                      on:click={() => {
-                        mobileMenuOpen = true;
-                      }}
-                      type="button"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
-                      aria-expanded="false"
-                    >
-                      <span class="sr-only">Open main menu</span>
-                      <!-- Heroicon name: outline/menu -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                {#each navLinks as navLink}
-                  <a
-                    href={navLink.href}
-                    class="font-medium {navLink.primary
-                      ? 'text-teal-600 hover:text-teal-500'
-                      : 'text-gray-500 hover:text-gray-900'}">{navLink.text}</a
-                  >
-                {/each}
-              </div>
-            </nav>
-          </div>
+				<div>
+					<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+						<nav
+							class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+							aria-label="Global"
+						>
+							<div
+								class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
+							>
+								<div class="flex items-center justify-between w-full md:w-auto">
+									<a class="font-bold tracking-tighter" href="/">
+										<h1 class="text-2xl md:text-3xl md:mt-2">YAS</h1>
+										<p class="text-gray-600 -mt-2 md:text-lg">
+											Youth in Action - Sudan
+										</p>
+									</a>
+									<div
+										class:hidden={!navLinks.length}
+										class="-mr-2 flex items-center md:hidden"
+									>
+										<button
+											on:click={() => {
+												mobileMenuOpen = true;
+											}}
+											type="button"
+											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+											aria-expanded="false"
+										>
+											<span class="sr-only">Open main menu</span>
+											<!-- Heroicon name: outline/menu -->
+											<svg
+												class="h-6 w-6"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M4 6h16M4 12h16M4 18h16"
+												/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+								{#each navLinks as navLink}
+									<a
+										href={navLink.href}
+										class="font-medium {navLink.primary
+											? 'text-teal-600 hover:text-teal-500'
+											: 'text-gray-500 hover:text-gray-900'}">{navLink.text}</a
+									>
+								{/each}
+							</div>
+						</nav>
+					</div>
 
-          <!--
+					<!--
             Mobile menu, show/hide based on menu open state.
 
             Entering: "duration-150 ease-out"
@@ -98,83 +132,85 @@
               From: "opacity-100 scale-100"
               To: "opacity-0 scale-95"
           -->
-          {#if mobileMenuOpen}
-            <div
-              class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            >
-              <div
-                class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
-              >
-                <div class="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img class="h-8 w-auto" src="/workflow-mark.svg" alt="" />
-                  </div>
-                  <div class="-mr-2">
-                    <button
-                      on:click={() => {
-                        mobileMenuOpen = false;
-                      }}
-                      type="button"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
-                    >
-                      <span class="sr-only">Close main menu</span>
-                      <!-- Heroicon name: outline/x -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                  {#each navLinks.filter(l => !l.primary) as navLink}
-                    <a
-                      href={navLink.href}
-                      class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      >{navLink.text}</a
-                    >
-                  {/each}
-                </div>
-                {#if navLinks.find(l => !!l.primary)}
-                  <a
-                    href={navLinks.find(l => !!l.primary).href}
-                    class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
-                  >
-                    {navLinks.find(l => !!l.primary).text}
-                  </a>
-                {/if}
-              </div>
-            </div>
-          {/if}
-        </div>
+					{#if mobileMenuOpen}
+						<div
+							class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+						>
+							<div
+								class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+							>
+								<div class="px-5 pt-4 flex items-center justify-between">
+									<div>
+										<img class="h-8 w-auto" src="/workflow-mark.svg" alt="" />
+									</div>
+									<div class="-mr-2">
+										<button
+											on:click={() => {
+												mobileMenuOpen = false;
+											}}
+											type="button"
+											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+										>
+											<span class="sr-only">Close main menu</span>
+											<!-- Heroicon name: outline/x -->
+											<svg
+												class="h-6 w-6"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M6 18L18 6M6 6l12 12"
+												/>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="px-2 pt-2 pb-3 space-y-1">
+									{#each navLinks.filter(l => !l.primary) as navLink}
+										<a
+											href={navLink.href}
+											class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+											>{navLink.text}</a
+										>
+									{/each}
+								</div>
+								{#if navLinks.find(l => !!l.primary)}
+									<a
+										href={navLinks.find(l => !!l.primary).href}
+										class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
+									>
+										{navLinks.find(l => !!l.primary).text}
+									</a>
+								{/if}
+							</div>
+						</div>
+					{/if}
+				</div>
 
-        <main
-          class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-        >
-          <div class="sm:text-center lg:text-left">
-            <h1
-              class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
-            >
-              <span class="block xl:inline">Building a better</span>
-              <span class="block text-teal-600 xl:inline">Sudan, together</span>
-            </h1>
-            <p
-              class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-            >
-              We enable youth-led initiatives targeting sustainable community development with training, networking opportunities, and access to rescources.
-            </p>
-            <!-- <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+				<main
+					class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+				>
+					<div class="sm:text-center lg:text-left">
+						<h1
+							class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+						>
+							<span class="block xl:inline">Building a better</span>
+							<span class="block text-teal-600 xl:inline">Sudan, together</span>
+						</h1>
+						<p
+							class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+						>
+							We enable youth-led initiatives targeting sustainable community
+							development with training, networking opportunities, and access to
+							rescources.
+						</p>
+						<!-- <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
                 <a
                   href="/contact"
@@ -192,20 +228,20 @@
                 </a>
               </div>
             </div> -->
-          </div>
-        </main>
-      </div>
-    </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img
-        class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="/abdulaziz-mohammed-zHVKkN7vF34-unsplash.jpeg"
-        alt=""
-      />
-    </div>
-  </div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+			<img
+				class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+				src="/abdulaziz-mohammed-zHVKkN7vF34-unsplash.jpeg"
+				alt=""
+			/>
+		</div>
+	</div>
 
-  <!-- <div
+	<!-- <div
     class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-28 lg:px-8"
   >
     <div class="absolute inset-0">
@@ -375,7 +411,7 @@
     </div>
   </div> -->
 
-  <!-- <div class="relative bg-gray-900">
+	<!-- <div class="relative bg-gray-900">
     <div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
       <div class="h-full w-full xl:grid xl:grid-cols-2">
         <div class="h-full xl:relative xl:col-start-2">
@@ -445,7 +481,7 @@
     </div>
   </div> -->
 
-  <!-- <div class="bg-white">
+	<!-- <div class="bg-white">
     <div
       class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
     >
@@ -475,8 +511,8 @@
       </div>
     </div>
   </div> -->
-  
-  <!-- <div class="relative bg-white pt-16 pb-32 overflow-hidden">
+
+	<!-- <div class="relative bg-white pt-16 pb-32 overflow-hidden">
     <div class="relative">
       <div
         class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
@@ -630,11 +666,11 @@
     </div>
   </div> -->
 
-  <footer class="bg-gray-800 flex-1" aria-labelledby="footerHeading">
-    <h2 id="footerHeading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-2 xl:gap-8">
-        <!-- <div class="grid grid-cols-2 gap-8">
+	<footer class="bg-gray-800 flex-1" aria-labelledby="footerHeading">
+		<h2 id="footerHeading" class="sr-only">Footer</h2>
+		<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+			<div class="xl:grid xl:grid-cols-2 xl:gap-8">
+				<!-- <div class="grid grid-cols-2 gap-8">
           <div>
             <h3
               class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
@@ -670,43 +706,61 @@
             </ul>
           </div>
         </div> -->
-        <!-- <div class="mt-8 xl:mt-0"> -->
-        <div class="xl:mt-0">
-          <h3
-            class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
-          >
-            Subscribe to stay up to date
-          </h3>
-          <p class="mt-4 text-base text-gray-300">
-            The latest news sent directly to your inbox.
-          </p>
-          <form name="newsletter" class="mt-4 sm:flex sm:max-w-md" netlify>
-            <label for="email" class="sr-only">Email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autocomplete="email"
-              required
-              class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
-              placeholder="Enter your email"
-            />
-            <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button
-                type="submit"
-                class="w-full bg-teal-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-teal-500"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between"
-      >
-        <div class="flex space-x-6 md:order-2">
-          <!-- <a href="#" class="text-gray-400 hover:text-gray-300">
+				<!-- <div class="mt-8 xl:mt-0"> -->
+				<div class="xl:mt-0">
+					{#if subscribedToNewsletter}
+						<h3
+							class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+						>
+							Thanks for subscribing!
+						</h3>
+						<p class="mt-4 text-base text-gray-300">
+							You can change your mind at any time by clicking the 'Unsubscribe'
+							link at the bottom of the emails you receive.
+						</p>
+					{:else}
+						<h3
+							class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+						>
+							Subscribe to stay up to date
+						</h3>
+						<p class="mt-4 text-base text-gray-300">
+							The latest news sent directly to your inbox.
+						</p>
+						<form
+							id="newsletter"
+							name="newsletter"
+							class="mt-4 sm:flex sm:max-w-md"
+							netlify
+							method="POST"
+						>
+							<label for="email" class="sr-only">Email address</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								autocomplete="email"
+								required
+								class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
+								placeholder="Enter your email"
+							/>
+							<div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+								<button
+									type="submit"
+									class="w-full bg-teal-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-teal-500"
+								>
+									Subscribe
+								</button>
+							</div>
+						</form>
+					{/if}
+				</div>
+			</div>
+			<div
+				class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between"
+			>
+				<div class="flex space-x-6 md:order-2">
+					<!-- <a href="#" class="text-gray-400 hover:text-gray-300">
             <span class="sr-only">Facebook</span>
             <svg
               class="h-6 w-6"
@@ -751,11 +805,11 @@
               />
             </svg>
           </a> -->
-        </div>
-        <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-          &copy; 2021 Youth in Action - Sudan. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
+				</div>
+				<p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+					&copy; 2021 Youth in Action - Sudan.
+				</p>
+			</div>
+		</div>
+	</footer>
 </div>
