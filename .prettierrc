@@ -7,6 +7,5 @@
 	"tabWidth": 2,
 	"arrowParens": "avoid",
 	"endOfLine": "lf",
-	"bracketSpacing": true,
-	"plugins": ["prettier-plugin-svelte"]
+	"bracketSpacing": true
 }
