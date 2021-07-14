@@ -24,7 +24,7 @@
 			form.addEventListener('submit', e => {
 				e.preventDefault();
 				const formData = new FormData(form);
-				fetch('/', {
+				fetch('/subscribeToNewsletter', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 					body: new URLSearchParams(formData).toString(),
@@ -731,7 +731,6 @@
 							id="newsletter"
 							name="newsletter"
 							class="mt-4 sm:flex sm:max-w-md"
-							netlify
 							method="POST"
 						>
 							<label for="email" class="sr-only">Email address</label>
