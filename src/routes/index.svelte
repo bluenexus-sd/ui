@@ -1,6 +1,8 @@
-<script>
-	export const prerender = true;
+<script context="module">
+  export const prerender = true;
+</script>
 
+<script>
 	let mobileMenuOpen = false;
 
 	const navLinks = [
