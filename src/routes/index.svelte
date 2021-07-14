@@ -680,12 +680,12 @@
           <p class="mt-4 text-base text-gray-300">
             The latest news sent directly to your inbox.
           </p>
-          <form class="mt-4 sm:flex sm:max-w-md">
-            <label for="emailAddress" class="sr-only">Email address</label>
+          <form name="newsletter" class="mt-4 sm:flex sm:max-w-md" netlify>
+            <label for="email" class="sr-only">Email address</label>
             <input
               type="email"
-              name="emailAddress"
-              id="emailAddress"
+              name="email"
+              id="email"
               autocomplete="email"
               required
               class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
