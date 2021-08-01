@@ -3,17 +3,17 @@
 # Please see the documentation for all configuration options:
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
-version: 2
-updates:
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
-    schedule:
-      interval: 'daily'
-    target-branch: 'main'
-    open-pull-requests-limit: 10
-    reviewers:
-      - 'thesabby'
-    commit-message:
-      include: scope
-      prefix: 'fix'
-      prefix-development: 'chore'
+# version: 2
+# updates:
+#   - package-ecosystem: 'npm' # See documentation for possible values
+#     directory: '/' # Location of package manifests
+#     schedule:
+#       interval: 'daily'
+#     target-branch: 'main'
+#     open-pull-requests-limit: 10
+#     reviewers:
+#       - 'thesabby'
+#     commit-message:
+#       include: scope
+#       prefix: 'fix'
+#       prefix-development: 'chore'
