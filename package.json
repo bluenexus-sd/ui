@@ -29,7 +29,7 @@
     "prettier": "~2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
     "svelte": "^3.38.3",
-    "tailwindcss": "^2.2.4",
+    "tailwindcss": "^2.2.14",
     "vite": "^2.4.2"
   },
   "type": "module",
