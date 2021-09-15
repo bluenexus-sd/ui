@@ -11,6 +11,15 @@ module.exports = {
 				teal: colors.teal,
 				cyan: colors.cyan,
 				emerald: colors.emerald,
+				violet: colors.violet,
+				fuchsia: colors.fuchsia,
+				rose: colors.rose,
+				kabdi: {
+					secondary: '#670c2a',
+					primary: '#91113b',
+					light: '#a61344',
+					lightest: '#ce1753'
+				}
 			},
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -23,5 +32,6 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/typography')
 	]
 };

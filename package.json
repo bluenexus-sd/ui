@@ -15,6 +15,7 @@
     "@sveltejs/kit": "^1.0.0-next.127",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.6",
     "eslint": "^7.30.0",
@@ -40,5 +41,10 @@
     "*.{js,svelte,json,md,graphql}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "accept-language-parser": "^1.5.0",
+    "cookie": "^0.4.1",
+    "svelte-i18n": "^3.3.10"
   }
 }

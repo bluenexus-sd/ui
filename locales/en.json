@@ -1,0 +1,27 @@
+{
+	"locale": "العربية",
+	"minHagak": {
+		"nav": {
+			"topics": "Topics",
+			"legal_aid": "Legal Aid"
+		},
+		"landing": {
+			"sections": {
+				"who_are_we": {
+					"title": "Who are we?",
+					"text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+				}
+			}
+		},
+		"contact_us": "Contact us",
+		"read_more": "Read more",
+		"topics": "Topics",
+		"topic": {
+			"work": "Work",
+			"children": "Children",
+			"marriage": "Marriage"
+		},
+		"work_with_us": "Work with us",
+		"what_is_it": "What is 'Min Hagak'?"
+	}
+}

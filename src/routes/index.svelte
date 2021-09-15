@@ -9,15 +9,22 @@
 	let subscribedToNewsletter = false;
 
 	const navLinks = [
-		// { text: 'Contact', href: '/contact' },
+		{ text: 'People', href: '/people' },
+		{ text: 'Contact', href: '/contact' },
 		// { text: 'Dontate', href: '', primary: true },
 	];
 
 	onMount(() => {
-		const subscribedToNewsletterAt = Number(localStorage.getItem('subscribedToNewsletterAt'));
-    if(!Number.isNaN(subscribedToNewsletterAt) && Date.now() - subscribedToNewsletterAt < 120000) {
-      subscribedToNewsletter = true;
-    }
+		const subscribedToNewsletterAt = Number(
+			localStorage.getItem('subscribedToNewsletterAt'),
+		);
+
+		if (
+			!Number.isNaN(subscribedToNewsletterAt) &&
+			Date.now() - subscribedToNewsletterAt < 120000
+		) {
+			subscribedToNewsletter = true;
+		}
 
 		const form = document.getElementById('newsletter');
 		if (form) {
@@ -32,7 +39,7 @@
 					.then(() => {
 						console.log('newsletter subscription successful');
 						subscribedToNewsletter = true;
-            localStorage.setItem('subscribedToNewsletterAt', Date.now());
+						localStorage.setItem('subscribedToNewsletterAt', Date.now());
 					})
 					.catch(err => console.error(err));
 			});
@@ -71,10 +78,7 @@
 							>
 								<div class="flex items-center justify-between w-full md:w-auto">
 									<a class="font-bold tracking-tighter" href="/">
-										<h1 class="text-2xl md:text-3xl md:mt-2">YAS</h1>
-										<p class="text-gray-600 -mt-2 md:text-lg">
-											Youth in Action - Sudan
-										</p>
+                    <img class="text-white h-8" src="/full-logo.svg" alt="YASudan" />
 									</a>
 									<div
 										class:hidden={!navLinks.length}
@@ -115,7 +119,8 @@
 										href={navLink.href}
 										class="font-medium {navLink.primary
 											? 'text-teal-600 hover:text-teal-500'
-											: 'text-gray-500 hover:text-gray-900'}">{navLink.text}</a
+											: 'text-gray-500 hover:text-gray-900'}"
+										>{navLink.text}</a
 									>
 								{/each}
 							</div>
@@ -141,7 +146,7 @@
 							>
 								<div class="px-5 pt-4 flex items-center justify-between">
 									<div>
-										<img class="h-8 w-auto" src="/workflow-mark.svg" alt="" />
+										<img class="h-8 w-auto" src="/logo.svg" alt="" />
 									</div>
 									<div class="-mr-2">
 										<button
@@ -759,7 +764,7 @@
 				class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between"
 			>
 				<div class="flex space-x-6 md:order-2">
-					<!-- <a href="#" class="text-gray-400 hover:text-gray-300">
+					<a href="#" class="text-gray-400 hover:text-gray-300">
             <span class="sr-only">Facebook</span>
             <svg
               class="h-6 w-6"
@@ -803,7 +808,7 @@
                 d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
               />
             </svg>
-          </a> -->
+          </a>
 				</div>
 				<p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
 					&copy; 2021 Youth in Action - Sudan.
