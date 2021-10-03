@@ -90,7 +90,7 @@
 												mobileMenuOpen = true;
 											}}
 											type="button"
-											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 											aria-expanded="false"
 										>
 											<span class="sr-only">Open main menu</span>
@@ -119,7 +119,7 @@
 									<a
 										href={navLink.href}
 										class="font-medium {navLink.primary
-											? 'text-teal-600 hover:text-teal-500'
+											? 'text-sky-600 hover:text-sky-500'
 											: 'text-gray-500 hover:text-gray-900'}"
 										>{navLink.text}</a
 									>
@@ -155,7 +155,7 @@
 												mobileMenuOpen = false;
 											}}
 											type="button"
-											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+											class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 										>
 											<span class="sr-only">Close main menu</span>
 											<!-- Heroicon name: outline/x -->
@@ -189,7 +189,7 @@
 								{#if navLinks.find(l => !!l.primary)}
 									<a
 										href={navLinks.find(l => !!l.primary).href}
-										class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
+										class="block w-full px-5 py-3 text-center font-medium text-sky-600 bg-gray-50 hover:bg-gray-100"
 									>
 										{navLinks.find(l => !!l.primary).text}
 									</a>
@@ -207,20 +207,18 @@
 							class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
 						>
 							<span class="block xl:inline">Building a better</span>
-							<span class="block text-teal-600 xl:inline">Sudan, together</span>
+							<span class="block text-sky-600 xl:inline">Sudan, together</span>
 						</h1>
 						<p
 							class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
 						>
-							We enable youth-led initiatives targeting sustainable community
-							development with training, networking opportunities, and access to
-							rescources.
+							Supporting sustainable development by connecting and empowering diverse youth-led initiatives. Building capacities, providing guidance, and aligning efforts.
 						</p>
 						<!-- <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
                 <a
                   href="/contact"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10"
                 >
                   Get involved
                 </a>
@@ -228,7 +226,7 @@
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/mission"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-teal-100 hover:bg-teal-200 md:py-4 md:text-lg md:px-10"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-700 bg-sky-100 hover:bg-sky-200 md:py-4 md:text-lg md:px-10"
                 >
                   Learn more
                 </a>
@@ -251,7 +249,7 @@
 <!-- <div class="bg-white">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
     <div class="text-center">
-      <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Vision & Mission</h2>
+      <h2 class="text-base font-semibold text-sky-600 tracking-wide uppercase">Vision & Mission</h2>
       <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Connect & Develop</p>
       <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Develop youth-led community initiatives through operational and technological support to sustain their actions.
 
@@ -261,14 +259,14 @@
 </div> -->
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-teal-700">
+<div class="bg-sky-700">
   <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
       <span class="block">Developing youth-led initiatives.</span>
       <span class="block">Connecting communities.</span>
     </h2>
-    <p class="mt-4 text-lg leading-6 text-teal-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-    <a href="/mission" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50 sm:w-auto">
+    <p class="mt-4 text-lg leading-6 text-sky-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+    <a href="/mission" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-sky-50 sm:w-auto">
       Learn more
     </a>
   </div>
@@ -279,7 +277,7 @@
 <div class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <!-- <h2 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Transactions</h2> -->
+      <!-- <h2 class="text-base text-sky-600 font-semibold tracking-wide uppercase">Transactions</h2> -->
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         What we are focused on
       </p>
@@ -292,7 +290,7 @@
       <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
         <div class="relative">
           <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
               <!-- Heroicon name: outline/globe-alt -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -307,7 +305,7 @@
 
         <div class="relative">
           <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
               <!-- Heroicon name: outline/scale -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -322,7 +320,7 @@
 
         <div class="relative">
           <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
               <!-- Heroicon name: outline/lightning-bolt -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -337,7 +335,7 @@
 
         <div class="relative">
           <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
               <!-- Heroicon name: outline/annotation -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
@@ -376,11 +374,11 @@
     class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
   >
     <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-      <h2 class="text-sm font-semibold text-teal-300 tracking-wide uppercase">
+      <h2 class="text-sm font-semibold text-sky-300 tracking-wide uppercase">
         Important Metrics
       </h2>
       <p class="mt-3 text-3xl font-extrabold text-white">
-        Everything we do is guided by real data
+        Everything we do is guided by the data
       </p>
       <p class="mt-5 text-lg text-gray-300">
         Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis
@@ -390,35 +388,32 @@
       </p>
       <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
         <p>
-          <span class="block text-2xl font-bold text-white">8K+</span>
+          <span class="block text-2xl font-bold text-white">68%</span>
           <span class="mt-1 block text-base text-gray-300"
-            ><span class="font-medium text-white">Companies</span> use laoreet amet
-            lacus nibh integer quis.</span
+            ><span class="font-medium text-white">Youth</span> (under 30) make up a majority of the population.</span
           >
         </p>
 
         <p>
-          <span class="block text-2xl font-bold text-white">25K+</span>
+          <span class="block text-2xl font-bold text-white">7K+</span>
           <span class="mt-1 block text-base text-gray-300"
             ><span class="font-medium text-white"
-              >Countries around the globe</span
-            > lacus nibh integer quis.</span
+              >Organizations</span
+            > and community bodies are youth-led.</span
           >
         </p>
 
         <p>
-          <span class="block text-2xl font-bold text-white">98%</span>
+          <span class="block text-2xl font-bold text-white">32.6%</span>
           <span class="mt-1 block text-base text-gray-300"
-            ><span class="font-medium text-white">Customer satisfaction</span> laoreet
-            amet lacus nibh integer quis.</span
+            >The <span class="font-medium text-white">unemployment rate</span> is high among youth (15 - 24).</span
           >
         </p>
 
         <p>
-          <span class="block text-2xl font-bold text-white">12M+</span>
+          <span class="block text-2xl font-bold text-white">46.5%</span>
           <span class="mt-1 block text-base text-gray-300"
-            ><span class="font-medium text-white">Issues resolved</span> lacus nibh
-            integer quis.</span
+            >A high <span class="font-medium text-white">poverty rate</span> plagues the country.</span
           >
         </p>
       </div>
@@ -455,7 +450,7 @@
           </div>
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
-              <p class="text-sm font-medium text-teal-600">
+              <p class="text-sm font-medium text-sky-600">
                 <a href="#" class="hover:underline"> Article </a>
               </p>
               <a href="#" class="block mt-2">
@@ -504,7 +499,7 @@
           </div>
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
-              <p class="text-sm font-medium text-teal-600">
+              <p class="text-sm font-medium text-sky-600">
                 <a href="#" class="hover:underline"> Video </a>
               </p>
               <a href="#" class="block mt-2">
@@ -554,7 +549,7 @@
           </div>
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
-              <p class="text-sm font-medium text-teal-600">
+              <p class="text-sm font-medium text-sky-600">
                 <a href="#" class="hover:underline"> Case Study </a>
               </p>
               <a href="#" class="block mt-2">
@@ -607,7 +602,7 @@
           <div>
             <div>
               <span
-                class="h-12 w-12 rounded-md flex items-center justify-center bg-teal-600"
+                class="h-12 w-12 rounded-md flex items-center justify-center bg-sky-600"
               >
                 <svg
                   class="h-6 w-6 text-white"
@@ -639,7 +634,7 @@
               <div class="mt-6">
                 <a
                   href="#"
-                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700"
                 >
                   Get started
                 </a>
@@ -695,7 +690,7 @@
           <div>
             <div>
               <span
-                class="h-12 w-12 rounded-md flex items-center justify-center bg-teal-600"
+                class="h-12 w-12 rounded-md flex items-center justify-center bg-sky-600"
               >
                 <svg
                   class="h-6 w-6 text-white"
@@ -727,7 +722,7 @@
               <div class="mt-6">
                 <a
                   href="#"
-                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700"
                 >
                   Get started
                 </a>
@@ -830,7 +825,7 @@
 							<div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
 								<button
 									type="submit"
-									class="w-full bg-teal-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-teal-500"
+									class="w-full bg-sky-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-sky-500"
 								>
 									Subscribe
 								</button>
@@ -890,7 +885,7 @@
           </a>
 				</div>
 				<p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-					&copy; 2021 Youth in Action - Sudan.
+					&copy; 2021 YASudan. Supported by BlueNexus.
 				</p>
 			</div>
 		</div>

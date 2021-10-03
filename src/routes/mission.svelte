@@ -37,7 +37,7 @@
 									mobileMenuOpen = true;
 								}}
 								type="button"
-								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 								aria-expanded="false"
 							>
 								<span class="sr-only">Open main menu</span>
@@ -66,7 +66,7 @@
 						<a
 							href={navLink.href}
 							class="font-medium {navLink.primary
-								? 'text-teal-600 hover:text-teal-500'
+								? 'text-sky-600 hover:text-sky-500'
 								: 'text-gray-500 hover:text-gray-900'}"
 							>{navLink.text}</a
 						>
@@ -102,7 +102,7 @@
 									mobileMenuOpen = false;
 								}}
 								type="button"
-								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 							>
 								<span class="sr-only">Close main menu</span>
 								<!-- Heroicon name: outline/x -->
@@ -136,7 +136,7 @@
 					{#if navLinks.find(l => !!l.primary)}
 						<a
 							href={navLinks.find(l => !!l.primary).href}
-							class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
+							class="block w-full px-5 py-3 text-center font-medium text-sky-600 bg-gray-50 hover:bg-gray-100"
 						>
 							{navLinks.find(l => !!l.primary).text}
 						</a>
@@ -174,10 +174,10 @@
   <div class="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
     <div class="lg:col-start-2 lg:pl-8">
       <div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-        <h2 class="leading-6 text-teal-600 font-semibold tracking-wide uppercase">What guides us</h2>
+        <h2 class="leading-6 text-sky-600 font-semibold tracking-wide uppercase">What guides us</h2>
         <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our Vision & Mission</h3>
         <p class="mt-8 text-lg text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-        <div class="mt-5 prose prose-teal text-gray-500">
+        <div class="mt-5 prose prose-sky text-gray-500">
           <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
           <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
           <p>Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.</p>
@@ -251,7 +251,7 @@
 			</a>
 		</div>
 		<p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-			&copy; 2021 Youth in Action - Sudan.
+			&copy; 2021 YASudan. Supported by BlueNexus.
 		</p>
 	</div>
 	</div>

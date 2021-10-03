@@ -39,7 +39,7 @@
 											mobileMenuOpen = true;
 										}}
 										type="button"
-										class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+										class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 										aria-expanded="false"
 									>
 										<span class="sr-only">Open main menu</span>
@@ -68,7 +68,7 @@
 								<a
 									href={navLink.href}
 									class="font-medium {navLink.primary
-										? 'text-teal-600 hover:text-teal-500'
+										? 'text-sky-600 hover:text-sky-500'
 										: 'text-gray-500 hover:text-gray-900'}"
 									>{navLink.text}</a
 								>
@@ -104,7 +104,7 @@
 											mobileMenuOpen = false;
 										}}
 										type="button"
-										class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+										class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
 									>
 										<span class="sr-only">Close main menu</span>
 										<!-- Heroicon name: outline/x -->
@@ -138,7 +138,7 @@
 							{#if navLinks.find(l => !!l.primary)}
 								<a
 									href={navLinks.find(l => !!l.primary).href}
-									class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100"
+									class="block w-full px-5 py-3 text-center font-medium text-sky-600 bg-gray-50 hover:bg-gray-100"
 								>
 									{navLinks.find(l => !!l.primary).text}
 								</a>
@@ -165,38 +165,7 @@
 											Email
 										</dt>
 										<dd>
-											support@example.com
-										</dd>
-									</div>
-									<div class="mt-1">
-										<dt class="sr-only">
-											Phone number
-										</dt>
-										<dd>
-											+1 (555) 123-4567
-										</dd>
-									</div>
-								</dl>
-							</div>
-							<div>
-								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									Press
-								</h3>
-								<dl class="mt-2 text-base text-gray-500">
-									<div>
-										<dt class="sr-only">
-											Email
-										</dt>
-										<dd>
-											support@example.com
-										</dd>
-									</div>
-									<div class="mt-1">
-										<dt class="sr-only">
-											Phone number
-										</dt>
-										<dd>
-											+1 (555) 123-4567
+											collaborate@yasudan.org
 										</dd>
 									</div>
 								</dl>
@@ -211,38 +180,7 @@
 											Email
 										</dt>
 										<dd>
-											support@example.com
-										</dd>
-									</div>
-									<div class="mt-1">
-										<dt class="sr-only">
-											Phone number
-										</dt>
-										<dd>
-											+1 (555) 123-4567
-										</dd>
-									</div>
-								</dl>
-							</div>
-							<div>
-								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									Say hello
-								</h3>
-								<dl class="mt-2 text-base text-gray-500">
-									<div>
-										<dt class="sr-only">
-											Email
-										</dt>
-										<dd>
-											support@example.com
-										</dd>
-									</div>
-									<div class="mt-1">
-										<dt class="sr-only">
-											Phone number
-										</dt>
-										<dd>
-											+1 (555) 123-4567
+											join@yasudan.org
 										</dd>
 									</div>
 								</dl>
@@ -256,53 +194,14 @@
 						<div class="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
 							<div>
 								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									Los Angeles
+									YASudan Lab
 								</h3>
 								<div class="mt-2 text-base text-gray-500">
 									<p>
-										4556 Brendan Ferry
+										Building 45, Block 7, Burri
 									</p>
 									<p class="mt-1">
-										Los Angeles, CA 90210
-									</p>
-								</div>
-							</div>
-							<div>
-								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									New York
-								</h3>
-								<div class="mt-2 text-base text-gray-500">
-									<p>
-										886 Walter Streets
-									</p>
-									<p class="mt-1">
-										New York, NY 12345
-									</p>
-								</div>
-							</div>
-							<div>
-								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									Toronto
-								</h3>
-								<div class="mt-2 text-base text-gray-500">
-									<p>
-										7363 Cynthia Pass
-									</p>
-									<p class="mt-1">
-										Toronto, ON N3Y 4H8
-									</p>
-								</div>
-							</div>
-							<div>
-								<h3 class="text-lg leading-6 font-medium text-gray-900">
-									Chicago
-								</h3>
-								<div class="mt-2 text-base text-gray-500">
-									<p>
-										726 Mavis Island
-									</p>
-									<p class="mt-1">
-										Chicago, IL 60601
+										Khartoum
 									</p>
 								</div>
 							</div>
@@ -367,7 +266,7 @@
 					</a>
 				</div>
 				<p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-					&copy; 2021 Youth in Action - Sudan.
+					&copy; 2021 YASudan. Supported by BlueNexus.
 				</p>
 			</div>
 		</div>
