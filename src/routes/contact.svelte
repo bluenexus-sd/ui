@@ -1,6 +1,7 @@
 <script>
 	let mobileMenuOpen = false;
 	const navLinks = [
+		{ text: 'Mission', href: '/mission' },
 		{ text: 'People', href: '/people' },
 		{ text: 'Contact', href: '/contact' },
 		// { text: 'Dontate', href: '', primary: true },
@@ -8,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Contact | Youth in Action - Sudan</title>
+	<title>Contact | YASudan</title>
 </svelte:head>
 
 

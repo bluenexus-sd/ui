@@ -9,6 +9,7 @@
 	let subscribedToNewsletter = false;
 
 	const navLinks = [
+		{ text: 'Mission', href: '/mission' },
 		{ text: 'People', href: '/people' },
 		{ text: 'Contact', href: '/contact' },
 		// { text: 'Dontate', href: '', primary: true },
@@ -48,7 +49,7 @@
 </script>
 
 <svelte:head>
-	<title>Home | Youth in Action - Sudan</title>
+	<title>Home | YASudan</title>
 </svelte:head>
 
 <div class="flex flex-col min-h-screen">
@@ -246,6 +247,185 @@
 		</div>
 	</div>
 
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<!-- <div class="bg-white">
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Vision & Mission</h2>
+      <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Connect & Develop</p>
+      <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Develop youth-led community initiatives through operational and technological support to sustain their actions.
+
+        <br/><br />Connect youth-led community initiatives & stakeholders through the YASudan network.</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-teal-700">
+  <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+      <span class="block">Developing youth-led initiatives.</span>
+      <span class="block">Connecting communities.</span>
+    </h2>
+    <p class="mt-4 text-lg leading-6 text-teal-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+    <a href="/mission" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50 sm:w-auto">
+      Learn more
+    </a>
+  </div>
+</div>
+
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <!-- <h2 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Transactions</h2> -->
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        What we are focused on
+      </p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+      </p>
+    </div>
+
+    <div class="mt-10">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div class="relative">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+              <!-- Heroicon name: outline/globe-alt -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Digital inclusion</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+              <!-- Heroicon name: outline/scale -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Legal empowerment</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+              <!-- Heroicon name: outline/lightning-bolt -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Value-chain development</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+              <!-- Heroicon name: outline/annotation -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Student development</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="relative bg-gray-900">
+  <div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
+    <div class="h-full w-full xl:grid xl:grid-cols-2">
+      <div class="h-full xl:relative xl:col-start-2">
+        <img
+          class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+          src="/yusuf-yassir--_AxNYIJRYE-unsplash.jpeg"
+          alt="People working on laptops"
+        />
+        <div
+          aria-hidden="true"
+          class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
+  >
+    <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+      <h2 class="text-sm font-semibold text-teal-300 tracking-wide uppercase">
+        Important Metrics
+      </h2>
+      <p class="mt-3 text-3xl font-extrabold text-white">
+        Everything we do is guided by real data
+      </p>
+      <p class="mt-5 text-lg text-gray-300">
+        Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis
+        in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in
+        quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
+        nibh integer quis. Eu vulputate diam sit tellus quis at.
+      </p>
+      <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+        <p>
+          <span class="block text-2xl font-bold text-white">8K+</span>
+          <span class="mt-1 block text-base text-gray-300"
+            ><span class="font-medium text-white">Companies</span> use laoreet amet
+            lacus nibh integer quis.</span
+          >
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">25K+</span>
+          <span class="mt-1 block text-base text-gray-300"
+            ><span class="font-medium text-white"
+              >Countries around the globe</span
+            > lacus nibh integer quis.</span
+          >
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">98%</span>
+          <span class="mt-1 block text-base text-gray-300"
+            ><span class="font-medium text-white">Customer satisfaction</span> laoreet
+            amet lacus nibh integer quis.</span
+          >
+        </p>
+
+        <p>
+          <span class="block text-2xl font-bold text-white">12M+</span>
+          <span class="mt-1 block text-base text-gray-300"
+            ><span class="font-medium text-white">Issues resolved</span> lacus nibh
+            integer quis.</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 	<!-- <div
     class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-28 lg:px-8"
   >
@@ -414,110 +594,9 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
-	<!-- <div class="relative bg-gray-900">
-    <div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
-      <div class="h-full w-full xl:grid xl:grid-cols-2">
-        <div class="h-full xl:relative xl:col-start-2">
-          <img
-            class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-            src="/yusuf-yassir--_AxNYIJRYE-unsplash.jpeg"
-            alt="People working on laptops"
-          />
-          <div
-            aria-hidden="true"
-            class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
-    >
-      <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-        <h2 class="text-sm font-semibold text-teal-300 tracking-wide uppercase">
-          Valuable Metrics
-        </h2>
-        <p class="mt-3 text-3xl font-extrabold text-white">
-          Get actionable data that will help grow your business
-        </p>
-        <p class="mt-5 text-lg text-gray-300">
-          Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis
-          in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in
-          quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
-          nibh integer quis. Eu vulputate diam sit tellus quis at.
-        </p>
-        <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-          <p>
-            <span class="block text-2xl font-bold text-white">8K+</span>
-            <span class="mt-1 block text-base text-gray-300"
-              ><span class="font-medium text-white">Companies</span> use laoreet amet
-              lacus nibh integer quis.</span
-            >
-          </p>
-
-          <p>
-            <span class="block text-2xl font-bold text-white">25K+</span>
-            <span class="mt-1 block text-base text-gray-300"
-              ><span class="font-medium text-white"
-                >Countries around the globe</span
-              > lacus nibh integer quis.</span
-            >
-          </p>
-
-          <p>
-            <span class="block text-2xl font-bold text-white">98%</span>
-            <span class="mt-1 block text-base text-gray-300"
-              ><span class="font-medium text-white">Customer satisfaction</span> laoreet
-              amet lacus nibh integer quis.</span
-            >
-          </p>
-
-          <p>
-            <span class="block text-2xl font-bold text-white">12M+</span>
-            <span class="mt-1 block text-base text-gray-300"
-              ><span class="font-medium text-white">Issues resolved</span> lacus nibh
-              integer quis.</span
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-	<!-- <div class="bg-white">
-    <div
-      class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
-    >
-      <h2
-        class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-      >
-        <span class="block">Ready to build back better?</span>
-        <span class="block text-teal-600">Join us today!</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700"
-          >
-            Get involved
-          </a>
-        </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50"
-          >
-            Learn more
-          </a>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-	<!-- <div class="relative bg-white pt-16 pb-32 overflow-hidden">
+	<div class="relative bg-white pt-16 pb-32 overflow-hidden">
     <div class="relative">
       <div
         class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"

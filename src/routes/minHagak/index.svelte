@@ -30,7 +30,7 @@
 									id="search"
 									type="text"
 									placeholder="What's your issue?"
-									class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+									class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-300 focus:ring-offset-gray-900"
 								/>
 							</div>
 							<div class="mt-3 sm:mt-0 sm:ml-3">
@@ -278,7 +278,7 @@
 						urna sed consectetur neque tristique pellentesque. Blandit amet, sed
 						aenean erat arcu morbi.
 					</p>
-					<div class="mt-5 prose prose-indigo text-gray-500">
+					<div class="mt-5 prose prose-teal text-gray-500">
 						<p>
 							Sollicitudin tristique eros erat odio sed vitae, consequat turpis
 							elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu
