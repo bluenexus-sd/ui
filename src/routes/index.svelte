@@ -21,7 +21,6 @@
 	import { _, locale } from 'svelte-i18n';
 
 	export let topics;
-	console.log(topics);
 </script>
 
 <main>
