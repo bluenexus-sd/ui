@@ -2,7 +2,7 @@
 	export async function load({ params, fetch }) {
 		const { topics } = await fetch('/topics.json').then(res => res.json());
 		return {
-			props: { topics, topic: params.topic },
+			props: { topics, topicKey: params.topic },
 		};
 	}
 </script>
@@ -11,7 +11,8 @@
 	import { _, locale } from 'svelte-i18n';
 
 	export let topics;
-	const topic = topics[topic];
+	export let topicKey;
+	const topic = topics[topicKey];
 
 	const { title, summary, image, imageCaption, content } = topic;
 
@@ -211,9 +212,9 @@
 			<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 				<div class="flex-1">
 					<p class="text-sm font-medium text-indigo-600">
-						<a href="#" class="hover:underline">{$_('minHagak.summary')}</a>
+						<span>{$_('minHagak.summary')}</span>
 					</p>
-					<a href="/topics/{key}" class="block mt-2">
+					<a rel="external" href="/topics/{key}" class="block mt-2">
 						<p class="text-xl font-semibold text-gray-900">
 							{topic.title}
 						</p>
@@ -221,7 +222,7 @@
 							{topic.summary?.length > 160
 								? `${topic.summary.slice(0, 160)}...`
 								: topic.summary}
-							<a
+							<a rel="external"
 								href="/topics/{key}"
 								class="text-base font-medium text-kabdi-primary hover:text-kabdi-light"
 								>{$_('minHagak.read_more')}<span aria-hidden="true"
