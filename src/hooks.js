@@ -25,7 +25,7 @@ export function getSession(request) {
 	};
 }
 
-export async function handle({ request, resolve }) {
+export async function event({ request, resolve }) {
 	const response = await resolve(request);
 
 	return response;

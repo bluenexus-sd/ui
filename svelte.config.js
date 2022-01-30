@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import { searchForWorkspaceRoot } from 'vite';
 import adapter from '@sveltejs/adapter-netlify';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -19,6 +20,11 @@ export default {
 					$components: resolve('src/components'),
 					$utils: resolve('src/utils'),
 					$styles: resolve('src/styles'),
+				},
+			},
+			server: {
+				fs: {
+					allow: [searchForWorkspaceRoot(process.cwd())],
 				},
 			},
 		},
