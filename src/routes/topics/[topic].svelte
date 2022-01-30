@@ -1,19 +1,8 @@
 <script context="module">
 	export async function load({ params, fetch }) {
 		const { topics } = await fetch('/topics.json').then(res => res.json());
-		const url = `/topics/${params.topic}.json`;
-		const res = await fetch(url);
-
-		if (res.ok) {
-			const { topic } = await res.json();
-			return {
-				props: { topics, topic },
-			};
-		}
-
 		return {
-			status: res.status,
-			error: new Error(`Could not load ${url}`),
+			props: { topics, topic: params.topic },
 		};
 	}
 </script>
@@ -22,7 +11,7 @@
 	import { _, locale } from 'svelte-i18n';
 
 	export let topics;
-	export let topic;
+	const topic = topics[topic];
 
 	const { title, summary, image, imageCaption, content } = topic;
 
