@@ -19,9 +19,9 @@
 	function getNestingClass(nested) {
 		switch (nested) {
 			case 2:
-				return $locale === 'ar' ? 'pr-20' : 'pl-20';
+				return $locale === 'ar' ? 'pr-12' : 'pl-12';
 			default:
-				return $locale === 'ar' ? 'pr-10' : 'pl-10';
+				return $locale === 'ar' ? 'pr-6' : 'pl-6';
 		}
 	}
 
@@ -203,7 +203,7 @@
 	</div>
 </div>
 
-<div class="my-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-4xl">
+<div class="my-12 px-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-4xl">
 	{#each Object.entries(topics).filter(([k, t]) => t.title !== title) as [key, topic]}
 		<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 			<div class="flex-shrink-0">
